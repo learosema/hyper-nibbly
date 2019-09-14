@@ -1,0 +1,12 @@
+body {
+  background: #000;
+  overflow: hidden;
+}
+
+.snake__tail {
+  fill: none;
+  stroke: #273;
+  stroke-width: 32;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}

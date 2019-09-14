@@ -1,0 +1,15 @@
+{
+  "name": "hyper-nibbly",
+  "version": "1.0.0",
+  "description": "A snake game",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server"
+  },
+  "author": "Lea Rosema",
+  "license": "MIT",
+  "dependencies": {},
+  "devDependencies": {
+    "express": "^4.17.1"
+  }
+}
