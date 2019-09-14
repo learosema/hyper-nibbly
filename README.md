@@ -1,6 +1,6 @@
 # Hyper Nibbly
 
-This is a simple snake-like game in Vanilla JavaScript + SVG while I was travelling with Deutsche Bahn. 
+This is a simple snake-like game in Vanilla JavaScript + SVG I made while travelling with Deutsche Bahn. 
 
 Try to eat all the cookies. :)
 
