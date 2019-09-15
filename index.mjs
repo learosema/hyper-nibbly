@@ -1,4 +1,3 @@
-console.clear();
 const xlinkNS = 'http://www.w3.org/1999/xlink';
 const svgNS = 'http://www.w3.org/2000/svg';
 
@@ -27,7 +26,6 @@ function createMap(asciiMap) {
 }
 
 class Snake {
-
 
   constructor(world) {
     this.world = world || document.querySelector('#world');
@@ -65,13 +63,12 @@ class Snake {
   }
 
   getField(x, y) {
-    return this.level[y][x] || '#'
+    return this.level[y][x] || '#';
   }
 
   setField(x, y, value) {
     this.level[y][x] = value;
   }
-
 
   setup() {
     this.initialRender();
@@ -101,7 +98,6 @@ class Snake {
   }
 
   checkCollisions() {
-    console.time();
     const coords = [{x: this.player.x, y: this.player.y}].concat(this.player.tailCoords);
     coords.forEach(a => {
       const nodes = coords.filter(b => a.x === b.x && a.y === b.y);
@@ -110,10 +106,8 @@ class Snake {
         return true;
       }
     });
-    console.timeEnd();
     return false;
   }
-
 
   moveUp() {
     this.move(0, -1);
@@ -143,8 +137,6 @@ class Snake {
         }
         const sprite = createSprite(this.spriteMap[col], x * 64, y * 64);
         this.world.appendChild(sprite);
-        
-
       });
     });
     this.player.head = createSprite('#snakeHead', this.player.x * 64, this.player.y * 64);
@@ -158,8 +150,6 @@ class Snake {
 
   setupKeys() {
     window.addEventListener('keyup', (e) => {
-      console.log(e.keyCode);
-
       if (e.keyCode === 38) {
         this.moveUp();
       }
