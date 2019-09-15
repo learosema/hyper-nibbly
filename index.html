@@ -10,13 +10,11 @@
 <body>
   <svg class="world" viewBox="0 0 1280 704" style="width: 1280px; height: 704px;">
       <symbol id="wall" width="64" height="64" viewBox="0 0 64 64">
-        
         <rect x="0" y="0" width="64" height="64" fill="#444" />
         <rect x="0" y="2" width="42" height="30" fill="#f52" />
         <rect x="44" y="2" width="20" height="30" fill="#f52" />
         <rect x="0" y="34" width="22" height="30" fill="#f52" />
         <rect x="24" y="34" width="40" height="30" fill="#f52" />
-      
       </symbol>
     
       <symbol id="cookie" width="64" height="64" viewBox="0 0 64 64">
@@ -29,7 +27,6 @@
           <circle cx="32" cy="32" r="32" fill="#273" />
           <circle cx="16" cy="24" r="8" fill="#fff" />
           <circle cx="48" cy="24" r="8" fill="#fff" />
-
           <circle cx="18" cy="22" r="4" fill="#000" />
           <circle cx="50" cy="22" r="4" fill="#000" />
         </g>
@@ -45,28 +42,12 @@
       </symbol>
 
       <symbol id="snakeHead_down" width="64" height="64" viewBox="0 0 64 64">
-          <use href="#snakeHead" width="64" height="64" transform-origin="50% 50%" transform="rotate(180)" />
+        <use href="#snakeHead" width="64" height="64" transform-origin="50% 50%" transform="rotate(180)" />
       </symbol>
 
       <symbol id="snakeHead_left" width="64" height="64" viewBox="0 0 64 64">
-          <use href="#snakeHead" width="64" height="64" transform-origin="50% 50%" transform="rotate(270)" />
+        <use href="#snakeHead" width="64" height="64" transform-origin="50% 50%" transform="rotate(270)" />
       </symbol>
-      <!--
-      <use href="#wall" x="0" y="0" width="64" height="64" />
-      <use href="#wall" x="64" y="0" width="64" height="64" />
-      <use href="#wall" x="128" y="0" width="64" height="64" />
-      <use href="#wall" x="192" y="0" width="64" height="64" />
-      <use href="#wall" x="256" y="0" width="64" height="64" />
-      <use href="#wall" x="320" y="0" width="64" height="64" />
-
-      <use href="#wall" x="0" y="64" width="64" height="64" />
-      <use href="#wall" x="0" y="128" width="64" height="64" />
-      <use href="#wall" x="0" y="192" width="64" height="64" />
-
-      <path d="M160,96 l-64,0 l0,64 l0,64 l64,0 l0,-64 l64,0" stroke-width="32" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke="#273" />
-      <use href="#snakeHead_right" x="128" y="64" width="64" height="64" />
-
-      -->
       <g id="world">
 
       </g>
